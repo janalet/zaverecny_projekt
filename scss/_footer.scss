@@ -1,0 +1,35 @@
+@use 'colors';
+@use 'fonts';
+
+.footer{
+    background-color: colors.$second-color;
+    font-family: fonts.$main-font;
+    padding: 15px;
+    
+}
+
+.footer_link{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    // background-color: colors.$third-color;
+    // padding: 10px;
+    // border-radius: 20px;
+}
+
+.footer_flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer_text{
+    margin: 0;
+    color: white;
+}
+
+.footer_text_name{
+    text-align: center;
+    margin: 15px 0 0 0;
+    font-size: 12px;
+    color: colors.$third-color;
+}

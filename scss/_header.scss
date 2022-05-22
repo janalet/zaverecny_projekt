@@ -1,0 +1,72 @@
+@use 'colors'; 
+@use 'fonts'; 
+
+
+.logo{
+    padding-top: 20px;
+    margin-bottom: 20px;
+    background-image: url("../obrazky/uvodni_foto.jpg");
+    background-size: cover;
+    text-align: center;
+    // border-bottom: 1px solid colors.$second-color;
+}
+
+.logo_img{
+    width: 400px;
+}
+
+.checkbox{
+    position: absolute;
+    left: -9999px;
+}
+
+.toggler{
+    font-family: fonts.$main-font;
+    margin: 10px;
+}
+
+// .nav{
+//     display: flex;
+//     flex-direction: row-reverse;
+//     flex-wrap: wrap;
+// }
+
+.menu{
+    font-family: fonts.$main-font;
+    margin: 10px 0 0 0;
+    padding: 0;
+    list-style: none;
+    background-color: colors.$second-color;
+    display: none;
+    
+}
+
+.menu_li{
+    border-bottom: 1px solid white;
+    
+}
+
+.menu_link{
+    text-decoration: none;
+    display: block;
+    padding: 10px 30px;
+    color: white;
+}
+
+.menu_link:hover{
+    background-color: colors.$third-color;
+}
+
+
+.checkbox:checked ~ .menu{
+    display: block;
+}
+
+.logo:after{
+    display: block;
+    content: "";
+    background-color: #cacaca;
+    width: auto;
+    height: 1px;
+    margin: auto;
+}

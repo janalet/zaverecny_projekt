@@ -1,51 +1,44 @@
+@use 'fonts';
+@use 'colors';
+
+
 body{
-    margin: 0;
-    box-sizing: border-box;
-    background-image: url("obrázky/uvodni_foto.jpg");
-    background-size: cover;
-    /* background-repeat: no-repeat; */
-    
+    background-image: url("../obrazky/uvodni_foto.jpg");
+    background-size: 1200px;
 }
 
-.main{
-    /* margin-top: 100px; */
-}
-
-
-.logo_img{
+.logo_img {
     display: block;
     width: 300px;
     margin: auto;
     position: relative;
     top: 30%;
-}
-
-
-.logo{
-    height: 100px;
-}
-
+  }
+  
+  .logo {
+    height: auto;
+  }
 
 .menu{
     padding: 0;
-    font-family: 'Roboto Flex', sans-serif;
+    font-family: fonts.$main-font;
     list-style: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
     margin: 30px auto 0;
     height: 250px;
     justify-content:space-between;
 }
 
-a{
+.menu_link{
     text-decoration: none;
-    color: black;
+    color: colors.$main-color;
     line-height: 2;
     font-size: 20px;
     font-weight: 600;
 }
+
 
 
 @media screen and (min-width: 820px) {
@@ -59,10 +52,22 @@ a{
 
     .main{
         margin-top: 0;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
     }
 
+}
+
+
+@media screen and (min-width: 1100px) {
+
+    .logo_img{
+        width: 500px;
+    }
+
+    .menu_link{
+        font-size: 25px;
+    }
+
+    .menu{
+        width: 900px;
+    }
 }
