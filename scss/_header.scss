@@ -3,16 +3,16 @@
 
 
 .logo{
-    padding-top: 20px;
-    margin-bottom: 20px;
+    padding: 6% 0 4%;
+    margin-bottom: 15px;
     background-image: url("../obrazky/uvodni_foto.jpg");
     background-size: cover;
     text-align: center;
-    // border-bottom: 1px solid colors.$second-color;
+    border-bottom: 1px solid colors.$second-color;
 }
 
 .logo_img{
-    width: 400px;
+    width: 80%;
 }
 
 .checkbox{
@@ -23,13 +23,8 @@
 .toggler{
     font-family: fonts.$main-font;
     margin: 10px;
+    font-size: 18px;
 }
-
-// .nav{
-//     display: flex;
-//     flex-direction: row-reverse;
-//     flex-wrap: wrap;
-// }
 
 .menu{
     font-family: fonts.$main-font;
@@ -50,11 +45,13 @@
     text-decoration: none;
     display: block;
     padding: 10px 30px;
-    color: white;
+    color: colors.$main-color;
+    font-size: 18px;
 }
 
 .menu_link:hover{
     background-color: colors.$third-color;
+    color: white;
 }
 
 
@@ -62,11 +59,59 @@
     display: block;
 }
 
-.logo:after{
-    display: block;
-    content: "";
-    background-color: #cacaca;
-    width: auto;
-    height: 1px;
-    margin: auto;
+
+
+@media screen and (min-width: 820px) {
+
+    .toggler{
+        display: none;
+    }
+  
+    .menu{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .logo_img{
+        width: 50%;
+    }
+
+    .logo{
+        padding: 4% 0 2%;
+        margin: 0;
+        border-bottom: none;
+    }
+
+    .menu_li{
+        border-bottom: none;
+        
+    }
+
+    .nav{
+        background-color: colors.$second-color;
+    }
+
+    .menu_link{
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 1100px) {
+
+    .logo_img{
+        width: 30%;
+    }
+
+
+    .logo{
+        padding: 4% 0 2%;
+        
+    }
+
 }
