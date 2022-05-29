@@ -1,95 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dyzajner</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,600&display=swap" rel="stylesheet">
-</head>
-<body>
-    
-    <main class="main">
-
-        <div class="logo">
-            <img src="obrazky/logo.svg" alt="logo" class="logo_img">
-        </div>
-    
-        <nav class="nav">
-            <input type="checkbox" class="checkbox" id="menu-checkbox">
-
-            <label for="menu-checkbox" class="toggler">☰ Menu</label>
-        
-            <ul class="menu">
-                <li class="menu_li"> <a class="menu_link" href="o-mne">O mně</a> </li>
-                <li class="menu_li"> <a class="menu_link" href="spolecenske-odevy">Společenské oděvy</a> </li>
-                <li class="menu_li"> <a class="menu_link" href="historicke-kostymy">Historické kostýmy</a> </li>
-                <li class="menu_li"> <a class="menu_link" href="jak-pracuji">Jak pracuji</a> </li>
-                <li class="menu_li"> <a class="menu_link" href="kontakt">Kontakt</a> </li>
-        
-            </ul>
-        </nav>
-
-
-        <p style="text-align: center; font-family: 'Roboto Flex', sans-serif; font-size: 18px; width: 80%; margin: auto;">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique quibusdam sit optio fugit et doloremque 
-            reiciendis sed officia provident quo expedita ab exercitationem, incidunt nisi ullam temporibus aliquid enim labore.
-            V informatice se jedná o odborný technický pojem, kterým je označen zvláštní datový typ (běžnější je string nebo řetězec) 
-            nebo datový formát. Text je cokoliv, co je uloženo v textovém formátu (t.j. přímo v textových znacích, kódovaných např. v ASCII, ANSI, 
-            Unicode, UTF-8, …), a to i v případě, že daný textový řetězec (posloupnost znaků) nedává žádný smysl v žádném přirozeném ani formálním jazyce, 
-            a dokonce i v případě, že délka textu je nulová (0 znaků). Podstatný je zde typ nebo formát, kde pevnému počtu bajtů (počítačových slov) odpovídá vždy 
-            konkrétní znak dané abecedy.
-            Text (dle jazykovědy, tj. posloupnost slov, nesoucí význam) nakreslený v obrázku (tj. např. vyfotografovaná cedule s nápisem) není z pohledu 
-            informatiky „prostým textem“ (anglicky plain text), neboť „z pohledu počítače“ se již nejedná o soubor písmen, ale o binární data grafických objektů 
-            (různě barevné body, křivky, …) respektive se jedná o datový typ nebo formát, jenž není z hlediska informatiky považován za textový. V tomto formátu text není zakódován po jednotlivých znacích dané abecedy v daném počtu bajtů.
-            Nicméně, dekódování původního textu z různých grafických netextových formátů je dnes běžně možné pomocí specializovaného software, např. 
-            pomocí OCR programů s relativně vysokou mírou přesnosti.
-            Výhoda textového formátu, obvykle v porovnání s binárním, je, že je lidsky a strojově čitatelný (vyhledávání), editovatelný běžnými editory 
-            (XML) a přenositelný po síti (uuencode). Nevýhoda je, že je delší - paměťově náročnější.
-            
-        
-
-        </p>
-
-        <p style="text-align: center; font-family: 'Roboto Flex', sans-serif; font-size: 18px; width: 80%; margin: auto;">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique quibusdam sit optio fugit et doloremque 
-            reiciendis sed officia provident quo expedita ab exercitationem, incidunt nisi ullam temporibus aliquid enim labore.
-            Similique quibusdam sit optio fugit et doloremque 
-            reiciendis sed officia provident quo expedita ab exercitationem, incidunt nisi ullam temporibus aliquid enim labore.
-            Similique quibusdam sit optio fugit et doloremque 
-            reiciendis sed officia provident quo expedita ab exercitationem, incidunt nisi ullam temporibus aliquid enim labore.
-            Similique quibusdam sit optio fugit et doloremque 
-            reiciendis sed officia provident quo expedita ab exercitationem, incidunt nisi ullam temporibus aliquid enim labore.
-            Similique quibusdam sit optio fugit et doloremque 
-            reiciendis sed officia provident quo expedita ab exercitationem, incidunt nisi ullam temporibus aliquid enim labore.
-            Similique quibusdam sit optio fugit et doloremque 
-            reiciendis sed officia provident quo expedita ab exercitationem, incidunt nisi ullam temporibus aliquid enim labore.
-            Similique quibusdam sit optio fugit et doloremque 
-            reiciendis sed officia provident quo expedita ab exercitationem, incidunt nisi ullam temporibus aliquid enim labore.
-        
-        </p>
-
-        <footer class="footer">
-
-            <div class="footer_flex">
-
-                <a href="https://www.facebook.com/dyzajner" class="footer_link"> Facebook </a>
-                <a href="https://www.instagram.com/dyzajner/" class="footer_link"> Instagram </a>
-
-            </div>
-
-            <p class="footer_text_name">© 2022, Jana Kaletová</p>
-
-        </footer>
-
-
-    </main>    
+---
+layout: main.njk
+title: Dyzajner
+---
 
 
 
+<div class="main_logo">
+    <img src="/obrazky/logo.svg" alt="logo" class="main_logo_img">
+</div>
 
-</body>
-</html>
+
+<ul class="main_menu">
+    <li> <a class="main_menu_link" href="/o_mne">O mně</a> </li>
+    <li> <a class="main_menu_link" href="/spolecenske_odevy">Společenské oděvy</a> </li>
+    <li> <a class="main_menu_link" href="/historicke_kostymy">Historické kostýmy</a> </li>
+    <li> <a class="main_menu_link" href="/jak_pracuji">Jak pracuji</a> </li>
+    <li> <a class="main_menu_link" href="/kontakt">Kontakt</a> </li>
+
+</ul>

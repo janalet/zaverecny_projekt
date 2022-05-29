@@ -1,0 +1,53 @@
+---
+layout: template.njk
+---
+
+
+<body>
+
+
+      <main class="main">
+
+        <div class="logo">
+            <img src="/obrazky/logo.svg" alt="logo" class="logo_img">
+        </div>
+    
+        <nav class="nav">
+            <input type="checkbox" class="checkbox" id="menu-checkbox">
+
+            <label for="menu-checkbox" class="toggler">☰ Menu</label>
+        
+            <ul class="menu">
+                <li class="menu_li"> <a class="menu_link" href="/o_mne">O mně</a> </li>
+                <li class="menu_li"> <a class="menu_link" href="/spolecenske_odevy">Společenské oděvy</a> </li>
+                <li class="menu_li"> <a class="menu_link" href="/historicke_kostymy">Historické kostýmy</a> </li>
+                <li class="menu_li"> <a class="menu_link" href="/jak_pracuji">Jak pracuji</a> </li>
+                <li class="menu_li"> <a class="menu_link" href="/kontakt">Kontakt</a> </li>
+        
+            </ul>
+        </nav>
+
+
+
+    {{ content | safe }}
+
+
+
+  <footer class="footer">
+
+            <div class="footer_flex">
+
+                <a href="https://www.facebook.com/dyzajner" class="footer_link"> Facebook </a>
+                <a href="https://www.instagram.com/dyzajner/" class="footer_link"> Instagram </a>
+
+            </div>
+
+            <p class="footer_text_name">© 2022, Jana Kaletová</p>
+
+        </footer>
+
+
+    </main>    
+
+
+</body>
