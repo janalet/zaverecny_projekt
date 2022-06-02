@@ -6,12 +6,17 @@ layout: template.njk
 <body>
 
 
-      <main class="main">
+      
 
         <div class="logo">
-            <img src="/obrazky/logo.svg" alt="logo" class="logo_img">
+
+            <a href="/index.html">
+                <img src="../images/logo.svg" alt="logo" class="logo_img">
+            </a>
+
         </div>
     
+
         <nav class="nav">
             <input type="checkbox" class="checkbox" id="menu-checkbox">
 
@@ -27,11 +32,11 @@ layout: template.njk
             </ul>
         </nav>
 
-
+    <main class="main">
 
     {{ content | safe }}
 
-
+    </main>  
 
   <footer class="footer">
 
@@ -47,7 +52,7 @@ layout: template.njk
         </footer>
 
 
-    </main>    
+      
 
 
 </body>

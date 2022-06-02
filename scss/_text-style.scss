@@ -1,0 +1,58 @@
+$text-horizontal: center;
+$text-size: 18px;
+$text-size-headline: 26px;
+$text-width: 90%;
+$text-margin: auto;
+
+@use 'fonts';
+
+
+.headline_1,
+.headline_2,
+.text{
+    font-family: fonts.$main-font;
+    text-align: $text-horizontal;
+}
+
+
+.headline_1{
+    font-size: $text-size-headline;
+    margin: 20px 0;
+}
+
+.headline_2{
+    font-size: 20px;
+    margin: 60px 0 20px;
+}
+
+.text{
+    font-size: $text-size;
+    width: $text-width;
+    margin: 0 $text-margin 30px;
+}
+
+
+
+
+@media screen and (min-width: 820px) {
+
+    .headline_1{
+        margin: 40px 0;
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 1100px) {
+
+    .headline_1{
+        margin: 50px 0;
+    }
+
+    .headline_2{
+        margin: 60px 0 30px;
+    }
+
+}

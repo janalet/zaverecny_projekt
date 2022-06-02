@@ -2,8 +2,9 @@
 @use 'colors';
 
 
+
 .main_body{
-    background-image: url("/obrazky/uvodni_foto.jpg");
+    background-image: url("../images/uvodni_foto.jpg");
     background-size: 1200px;
 }
 
@@ -11,13 +12,8 @@
     display: block;
     width: 300px;
     margin: auto;
-    position: relative;
-    top: 30%;
-  }
+}
   
-.main_logo {
-    height: auto;
-  }
 
 .main_menu{
     padding: 0;
@@ -27,7 +23,6 @@
     flex-direction: column;
     align-items: center;
     margin: 30px auto 0;
-    height: 250px;
     justify-content:space-between;
 }
 
@@ -37,7 +32,18 @@
     line-height: 2;
     font-size: 20px;
     font-weight: 600;
+    
 }
+
+
+.main_main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
 
 @media screen and (min-width: 820px) {
 
