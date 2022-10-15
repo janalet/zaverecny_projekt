@@ -50,9 +50,36 @@
     font-size: 18px;
 }
 
-.menu_link:hover{
-    background-color: colors.$third-color;
-    color: white;
+
+.second_o_mne,
+.second_spolecenske_odevy,
+.second_historicke_kostymy,
+.second_jak_pracuji,
+.second_kontakt{
+    --c: #8cbdbf;
+    background-image:
+      conic-gradient(from -135deg at 100%  50%, var(--c) 90deg, #0000 0),
+      conic-gradient(from -135deg at 2.6em 50%, #0000 90deg, var(--c) 0);
+    background-position:
+      0 0,
+      100% 0;
+    background-size: 0% 200%;
+    background-repeat: no-repeat;
+    transition: background-size 1s, background-position 0s;
+}
+
+
+.second_o_mne:hover,
+.second_spolecenske_odevy:hover,
+.second_historicke_kostymy:hover,
+.second_jak_pracuji:hover,
+.second_kontakt:hover{
+    background-size: calc(70% + .6em) 200%;
+    background-position:
+      0 100%,
+      100% 100%;
+    color: rgb(255, 255, 255);
+    
 }
 
 
@@ -70,18 +97,21 @@
   
     .menu{
         display: flex;
-        justify-content: center;
+        width: 75%;
+        justify-content: space-around;
         margin: auto;
     }
 
     .logo_img{
         width: 50%;
+
     }
 
     .logo{
-        padding: 4% 0 2%;
+        padding: 4% 0 5%;
         margin: 0;
         border-bottom: none;
+        position: relative;
     }
 
     .menu_li{
@@ -91,12 +121,27 @@
 
     .nav{
         background-color: colors.$second-color;
+        opacity: 0.75;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        border-bottom: 5px solid $third-color;
     }
 
     .menu_link{
         font-size: 14px;
         padding: 10px 20px;
     }
+
+    .second_o_mne,
+    .second_spolecenske_odevy,
+    .second_historicke_kostymy,
+    .second_jak_pracuji,
+    .second_kontakt{
+        transition: background-size .8s;
+    }
+
+
 
 }
 
@@ -111,8 +156,11 @@
 
 
     .logo{
-        padding: 4% 0 2%;
+        padding: 4% 0 5%;
         
     }
 
+    .menu{
+        width: 60%;
+    }
 }

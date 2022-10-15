@@ -32,8 +32,39 @@
     line-height: 2;
     font-size: 20px;
     font-weight: 600;
-    
+    padding: 2px 10px;
 }
+
+
+.main_o_mne,
+.main_spolecenske_odevy,
+.main_historicke_kostymy,
+.main_jak_pracuji,
+.main_kontakt{
+    --c: #8cbdbf;
+    background-image:
+      conic-gradient(from -135deg at 100%  50%, var(--c) 90deg, #0000 0),
+      conic-gradient(from -135deg at 2.2em 50%, #0000 90deg, var(--c) 0);
+    background-position:
+      0 0,
+      100% 0;
+    background-size: 0% 200%;
+    background-repeat: no-repeat;
+    transition: background-size .8s, background-position 0s;
+}
+
+
+.main_o_mne:hover,
+.main_spolecenske_odevy:hover,
+.main_historicke_kostymy:hover,
+.main_jak_pracuji:hover,
+.main_kontakt:hover{
+    background-size: calc(70% + .6em) 200%;
+    background-position:
+      0 100%,
+      100% 100%;
+}
+
 
 
 .main_main{
@@ -64,6 +95,7 @@
 
     .main_menu_link{
         font-size: 20px;
+        padding: 4px 12px;
     }
 
     .main_menu{

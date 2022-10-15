@@ -23,8 +23,7 @@
 // O mně, Jak pracuji, kontakt
 
 .foto_omne,
-.foto_prace,
-.foto_kontakt{
+.foto_prace{
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
@@ -32,21 +31,37 @@
 
 
 .foto_david,
-.foto_prace_1,
-.foto_kontakt_1{
+.foto_prace_1,{
     width: 60%;
 }
 
 
 .section_1::after,
-.section_2::after{
+.section_2::after,
+.david_kontakt::after{
     display: block;
     content: "";
     background-color: colors.$second-color;
     height: 1px;
     width: 80%;
     margin: auto;
+    margin-top: 60px;
 }
+
+
+
+//kontakt
+
+
+.box_kontakt{
+    margin: 100px 100px 200px;
+}
+
+.david_kontakt,
+.livia_kontakt{
+    position: relative;
+}
+
 
 
 
@@ -79,18 +94,16 @@
     }
 
 
-    // O mně + kontakt
+    // O mně
 
-    .flex_omne,
-    .flex_kontakt{
+    .flex_omne{
         width: 80%;
         display: flex;
         margin: auto;
     }
 
 
-    .text_omne,
-    .text_kontakt{
+    .text_omne{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -98,10 +111,6 @@
     }
 
    
-    .text_kontakt{
-        margin-right: 20%;
-    }
-    
 
     // Jak pracuji
 
